@@ -10,7 +10,7 @@ Download the `dotjs.crx` file from the [latest release](https://github.com/shado
 - Dev Mode: Use this while you are testing your `.js` scripts to have RawGit update more frequently. After you've finished your scripts, you should switch this off which will reduce the load on [RawGit](https://rawgit.com/)
 
 ## Usage
-dotjs will search for scripts in the `.js/` directory of the repository you specified. For example, if you navigate to [gist.github.com](https://gist.github.com), dotjs will attempt to run `dotjs.js` (the deafult script which is run for all domains), `gist.github.com.js`, `github.com.js`, and `com.js`.
+dotjs will search for scripts in the `.js/` directory of the repository you specified. For example, if you navigate to [gist.github.com](https://gist.github.com), dotjs will attempt to run `default.js` (the deafult script which is run for all domains), `gist.github.com.js`, `github.com.js`, and `com.js`.
 
 dotjs scripts have access to 3.1.0.
 
