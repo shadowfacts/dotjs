@@ -12,7 +12,7 @@ Download the `dotjs.crx` file from the [latest release](https://github.com/shado
 ## Usage
 dotjs will search for scripts in the `.js/` directory of the repository you specified. For example, if you navigate to [gist.github.com](https://gist.github.com), dotjs will attempt to run `default.js` (the deafult script which is run for all domains), `gist.github.com.js`, `github.com.js`, and `com.js`.
 
-dotjs scripts have access to 3.1.0.
+dotjs scripts have access to jQuery 3.1.0.
 
 ### Example
 For example, let's say you have a file `github.com.js` in your `.js` folder that contains this:
