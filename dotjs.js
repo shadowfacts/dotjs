@@ -13,14 +13,11 @@ function load() {
 			let files = ["default.js"];
 			let domain = location.hostname.replace(/^www\./,'');
 			let parts = domain.split(".");
+			var file = "";
 			for (var i = parts.length - 1; i >= 0; i--) {
-				var file = "";
-				for (var j = i; j < parts.length; j++) {
-					file += "." + parts[j];
-				}
-				file += ".js";
-				file = file.substring(1);
-				files.push(file);
+				file += parts[i];
+				files.push(file + ".js");
+				file += "/";
 			}
 
 			files.forEach((it) => {
