@@ -9,7 +9,7 @@ function load() {
 
 	function init(options) {
 		if (options.repo) {
-			let baseurl = options.dev ? `https://rawgit.com/${options.repo}/${options.branch}/.js/` : `https://cdn.rawgit.com/${optiosn.repo}/${options.branch}/.js/`;
+			let baseurl = options.dev ? `https://rawgit.com/${options.repo}/${options.branch}/.js/` : `https://cdn.rawgit.com/${options.repo}/${options.branch}/.js/`;
 			let files = ["default.js"];
 			let domain = location.hostname.replace(/^www\./,'');
 			let parts = domain.split(".");
