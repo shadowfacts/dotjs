@@ -15,6 +15,8 @@ function load() {
 			let parts = domain.split(".");
 			var file = "";
 			for (var i = parts.length - 1; i >= 0; i--) {
+				if (parts[i] == "localhost") continue;
+				
 				file += parts[i];
 				files.push(file + ".js");
 				file += "/";
